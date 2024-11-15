@@ -146,8 +146,7 @@
 }
 /*****************************/
 @media(max-width: 767px){
-    .btnBack
-    ,.brTitlePlans {
+    .brTitlePlans {
         display: none !important; 
     }
 
@@ -161,6 +160,9 @@
     }
     .boxPlan{
         margin-top: 0 !important;
+    }
+    .sectPlanes{
+        padding-top: 30px;
     }
 }
 /* Mover los dots de paginación más abajo */
