@@ -49,7 +49,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/*",
-        element: <Navigate to="/home" replace={true} />
+        element: <Navigate to="/" replace={true} />
     },
 ]);
 
