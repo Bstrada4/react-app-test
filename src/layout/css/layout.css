@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, * {
+    font-family: "Roboto", sans-serif !important;
+}
+/****************************/
+.navBarMain{
+    padding: 11px 0;
+}
+.navBarMain .listInfoNavBar {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    text-align: right;
+}
+.navBarMain .listInfoNavBar > li {
+    display: inline-block;
+}
+.navBarMain .listInfoNavBar > li h5 {
+    margin-bottom: 0;
+    line-height: 1;
+    margin-right: 30px;
+    font-weight: 500;
+}
+.navBarMain .listInfoNavBar > li a {
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+}
+/***********/
+@media(max-width: 991px){
+    .navBarMain .listInfoNavBar > li h5 {
+        font-size: 15px;
+    }
+    .navBarMain .listInfoNavBar > li a {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 767px){
+    .navBarMain .listInfoNavBar > li h5 {
+        display: none;
+    }
+}
+/*****************************/
+.router-outlet { }
+/*****************************/
+.footerMain{
+    background: #03050F;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.footerMain .rightAutor {
+    text-align: right;
+    color: #ffffff;
+    margin-bottom: 0;
+} 
+.imgLogoFooterMobile{
+    display: none;
+}
+/*****/
+@media(max-width: 991px){
+    .imgLogoFooterDesktop {
+        display: none;
+    }
+    .imgLogoFooterMobile {
+        display: block;
+    }
+    .imgLogoFooterMobile {
+        display: block;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 767px){
+    .footerMain {
+        height: auto;
+        padding: 35px 0;
+    }
+    .footerMain .rightAutor {
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid #2B304E;
+    }
+}

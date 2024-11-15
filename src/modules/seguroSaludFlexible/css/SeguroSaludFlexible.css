@@ -1,0 +1,131 @@
+.sectSeguroSaludFlexible {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+}
+.sectSeguroSaludFlexible .blurOne {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    z-index: -1;
+}
+.sectSeguroSaludFlexible .blurTwo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 100%;
+    z-index: -1;
+}
+/****************************/
+.boxSeguroSaludFlexible {
+    padding: 0 100px;
+    width: 100%;
+    max-width: 620px;
+}
+.boxSeguroSaludFlexible .boxHead span{
+    padding: 0 5px;
+    display: inline-block;
+    height: 24px;
+    border-radius: 5px;
+    background: linear-gradient(86.01deg, #00F4E2 0%, #00FF7F 100%);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.4000000059604645px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.boxSeguroSaludFlexible .boxHead .boxImgFamily {
+    display: none;
+}
+.boxSeguroSaludFlexible .boxHead h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.boxSeguroSaludFlexible .boxHead p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+/****************************/
+.inputDNI{
+    display: flex;
+}
+.inputDNI FormControl {
+    width: 100px;
+}
+/****************************/
+.inputCheckbox{
+    margin-top: 15px;
+}
+/****************************/
+.linkTermino{
+    color: #000000 !important;
+    text-decoration-color: #000000 !important;
+    font-weight: 600 !important;
+}
+/******/
+@media(max-width: 1199px) {
+    .boxSeguroSaludFlexible {
+        padding: 0 50px;
+        max-width: 100%;    
+    }
+}
+@media (max-width: 991px){
+    .boxSeguroSaludFlexible {
+        padding: 0;
+        max-width: 100%;
+    }
+    .boxSeguroSaludFlexible .boxHead {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .boxSeguroSaludFlexible .boxHead .boxTitle {
+        width: calc(100% - 180px);
+        padding-right: 15px;
+    }
+    .boxSeguroSaludFlexible .boxHead .boxImgFamily {
+        display: block;
+        width: 180px;
+    }
+    .boxSeguroSaludFlexible .boxHead .boxDescription {
+        margin-top: 25px;
+        padding-top: 25px;
+        border-top: 1px solid #CCD1EE;
+    }
+    .boxSeguroSaludFlexible .boxHead .boxDescription p {
+        margin-bottom: 0;
+    }
+    .boxSeguroSaludFlexible .boxHead h3 {
+        font-size: 45px;
+        margin-top: 15px;
+    }
+    .sectSeguroSaludFlexible .blurOne,
+    .sectSeguroSaludFlexible .blurTwo,
+    .imgFamilyDesktop {
+        display: none;
+    }
+}
+@media (max-width: 767px){
+    .boxSeguroSaludFlexible .boxHead h3 {
+        font-size: 32px;
+    }
+    .hideBr{
+        display: none;
+    }
+}
